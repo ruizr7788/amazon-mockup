@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "ember";
+  src: url(/fonts/ember/Amazon-Ember-Medium.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "brookerly";
+  src: url("/fonts/brookerly/Bookerly-Regular.ttf");
+}
+
+:root {
+  --nav-belt-color: #131921;
+  --nav-sublayer-color: #131921;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.link--blue-no-underline {
+  color: blue;
+  text-decoration: none;
+}
+.link--blue-no-underline:hover {
+  border-bottom: 1px solid lightsalmon;
+}

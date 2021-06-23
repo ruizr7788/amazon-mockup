@@ -1,0 +1,225 @@
+/* MAIN NAV BELT */
+
+#nav-belt {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: var(--nav-belt-color);
+  color: #fff;
+  height: 70px;
+  font-family: "ember";
+  box-sizing: border-box;
+}
+
+#nav-belt h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: flex-end;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-fill {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  box-sizing: border-box;
+}
+
+.main-belt-text {
+  font-family: "ember";
+  font-weight: 700;
+  font-size: 16.5px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-belt-right-secondary-text {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  height: 16px;
+  color: rgb(233, 232, 232);
+}
+.nav__belt--box {
+  height: 100%;
+}
+.nav__belt--box:hover {
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+/* nav belt logo */
+.nav__belt--logo {
+  padding: 0 10px;
+}
+
+/* nav belt location */
+.nav__belt--location-specifier {
+  padding: 10px;
+  align-self: center;
+}
+.nav__belt--location-specifier h6 {
+  font-weight: normal;
+  color: rgb(228, 228, 228);
+}
+
+/* nav belt language selector */
+.nav__belt--language-selector {
+  padding: 10px 15px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav__belt--language-selector:hover .language__selector--dropdown-list {
+  display: block;
+}
+
+.language__selector--dropdown-list {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 220px;
+  border: 1px solid lightgray;
+  position: absolute;
+  left: 0;
+}
+.language__selector--dropdown-list li {
+  list-style: none;
+}
+.language__selector--dropdown-list li label:hover {
+  color: #ffac2f;
+  border-bottom: 1px solid #f1a946;
+}
+.language__selector--dropdown-list li label {
+  cursor: pointer;
+}
+
+.language__dropdown--selected-language {
+  padding: 0 0 7px 0;
+  border-bottom: 1px solid lightgray;
+  line-height: 3;
+}
+.language__dropdown--options {
+  padding: 7px 0;
+  line-height: 2;
+  border-bottom: 1px solid lightgray;
+}
+.language__dropdown--footer {
+  padding: 15px 5px;
+  line-height: 1.5;
+}
+
+/* nav belt sign in */
+.nav__belt--sign-in {
+  padding: 10px 15px;
+  align-self: center;
+}
+
+/* nav belt return and orders */
+.nav__belt--return-orders {
+  padding: 10px 15px;
+  align-self: center;
+}
+/* nav belt cart */
+.nav__belt--cart {
+  padding: 5px 15px;
+  align-self: center;
+}
+.nav__belt--cart i {
+  font-size: xx-large;
+}
+
+/* Searchbar */
+
+.searchbar-categorization {
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px;
+}
+.searchbar-categorization:hover {
+  background-color: rgb(195, 193, 193);
+}
+
+#searchbar_landing_page {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding: 10px 15px;
+}
+
+#searchbar_landing_page input {
+  width: 950px;
+  height: 40px;
+}
+#searchbar_landing_page input:focus {
+  outline-color: #ffac2f;
+}
+
+#searchbar_landing_page input[type="text"] {
+  font-size: large;
+  padding-left: 10px;
+}
+
+.searchbar-search-icon {
+  cursor: pointer;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1a946;
+  max-width: 45px;
+  width: 100%;
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.searchbar-search-icon:hover {
+  background-color: #f6a62d;
+}
+
+.searchbar-search-icon i {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav__belt--link {
+  color: #fff;
+  text-decoration: none;
+}
