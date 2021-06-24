@@ -12,6 +12,8 @@
 :root {
   --nav-belt-color: #131921;
   --nav-sublayer-color: #131921;
+  --amazon-orange: #f1a946;
+  --amazon-orange-darker: #f6a62d;
 }
 
 body {
@@ -20,9 +22,21 @@ body {
 }
 
 .link--blue-no-underline {
-  color: blue;
+  color: #3366bb;
   text-decoration: none;
 }
 .link--blue-no-underline:hover {
   border-bottom: 1px solid lightsalmon;
+}
+
+.link__black--golden-hover {
+  color: #333;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.link__black--golden-hover:hover {
+  color: var(--amazon-orange);
+  text-decoration: underline;
+  border-color: var(--amazon-orange);
 }
