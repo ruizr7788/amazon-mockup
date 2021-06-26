@@ -11,7 +11,7 @@
 
 :root {
   --nav-belt-color: #131921;
-  --nav-sublayer-color: #131921;
+  --nav-sublayer-color: #232f3e;
   --amazon-orange: #f1a946;
   --amazon-orange-darker: #f6a62d;
 }
@@ -39,4 +39,9 @@ body {
   color: var(--amazon-orange);
   text-decoration: underline;
   border-color: var(--amazon-orange);
+}
+
+.link--white {
+  color: #fff;
+  text-decoration: none;
 }
