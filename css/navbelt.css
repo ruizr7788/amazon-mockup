@@ -310,11 +310,9 @@
 #nav_sublayer {
   display: flex;
   align-items: center;
-  width: 100%;
   background-color: var(--nav-sublayer-color);
   color: #fff;
   font-family: "ember";
-  padding: 0 1em;
   height: 50px;
 }
 
@@ -323,33 +321,42 @@
   height: 40px;
   justify-content: center;
   align-items: center;
+  min-width: fit-content;
 }
 
 #nav_sublayer .nav-fill ul {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
   width: 1450px;
 }
+#nav_sublayer .nav__shop--container {
+  height: 100%;
+}
 #nav_sublayer .nav-fill ul li {
   font-weight: normal;
+  font-size: 17px;
   color: rgb(218, 214, 214);
   padding: 3px 7px;
+  min-width: fit-content;
+  margin-right: 10px;
 }
 #nav_sublayer .nav-fill ul li:hover {
   outline: 2px solid white;
 }
 
 #nav_sublayer .nav-right {
-  margin: 0 0 0 2em;
   justify-content: center;
-  width: 250px;
+  max-width: 250px;
   height: 40px;
   align-items: center;
+  position: fixed;
+  right: 3em;
 }
 .nav__sublayer--promo p {
   font-weight: bold;
+  width: 250px;
+  font-size: 18px;
 }
 
 /* amazon prime dropdown */
@@ -359,12 +366,15 @@
 
 .sublayer__prime--dropdown {
   display: none;
-  width: fit-content;
+  min-width: fit-content;
   padding: 1em;
   position: absolute;
   top: 6.7em;
   background-color: rgb(250, 250, 250);
   border-radius: 5px;
+}
+.sublayer__prime--dropdown p {
+  width: 217px;
 }
 
 /* at 1000pxs set overflow to scroll */
@@ -386,6 +396,22 @@
   #nav-belt .nav-right {
     max-width: 430px;
     min-width: 429px;
+  }
+
+  #nav_sublayer .nav-fill {
+    max-width: 950px;
+  }
+  #nav_sublayer .nav-left {
+    max-width: 80px;
+    min-width: 79px;
+  }
+  #nav_sublayer .nav-right {
+    max-width: 250px;
+    min-width: 249px;
+  }
+  #nav_sublayer .nav-fill ul {
+    max-width: 750px;
+    overflow-x: hidden;
   }
 }
 
@@ -411,4 +437,60 @@
   body {
     width: 250%;
   }
+}
+
+/* remove items from shop categories as screen gets smaller */
+
+@media only screen and (max-width: 1890px) and (min-height: 900px) {
+  #nav_sublayer .nav-fill ul li:last-child {
+    display: none;
+  }
+  #nav_sublayer .nav-fill ul {
+    width: 1400px;
+  }
+}
+
+@media only screen and (max-width: 1845px) and (min-height: 900px) {
+  #nav_sublayer .nav-fill ul li:nth-last-child(2) {
+    display: none;
+  }
+  #nav_sublayer .nav-fill ul {
+    width: 1350px;
+  }
+}
+@media only screen and (max-width: 1755px) and (min-height: 900px) {
+  #nav_sublayer .nav-fill ul li:nth-last-child(3) {
+    display: none;
+  }
+  #nav_sublayer .nav-fill ul {
+    width: 1300px;
+  }
+}
+@media only screen and (max-width: 1615px) and (min-height: 900px) {
+  #nav_sublayer .nav-fill ul li:nth-last-child(4) {
+    display: none;
+  }
+  #nav_sublayer .nav-fill ul {
+    width: 1250px;
+  }
+}
+@media only screen and (max-width: 1515px) and (min-height: 900px) {
+  #nav_sublayer .nav-fill ul li:nth-last-child(5) {
+    display: none;
+  }
+  #nav_sublayer .nav-fill ul {
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1385px) and (min-height: 900px) {
+  #nav_sublayer .nav-fill ul li:nth-last-child(6) {
+    display: none;
+  }
+  #nav_sublayer .nav-fill ul {
+    width: fit-content;
+    justify-content: space-around;
+  }
+  /* #nav_sublayer .nav-fill ul li {
+    margin-right: 13px;
+  } */
 }
