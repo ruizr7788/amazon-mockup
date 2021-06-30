@@ -12,13 +12,20 @@
 :root {
   --nav-belt-color: #131921;
   --nav-sublayer-color: #232f3e;
-  --amazon-orange: #f1a946;
+  --amazon-orange: #ee960f;
   --amazon-orange-darker: #f6a62d;
+  --carousel-fade: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.001),
+    white
+  );
 }
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  background-color: rgba(231, 231, 231, 0.13);
 }
 
 .link--blue-no-underline {
@@ -44,4 +51,14 @@ body {
 .link--white {
   color: #fff;
   text-decoration: none;
+}
+
+.amazon__orange--btn {
+  width: 370px;
+  height: 40px;
+  border: 1px solid lightgray;
+  background: linear-gradient(to bottom, #eed5ad, #ee991a);
+}
+.amazon__orange--btn:hover {
+  background: linear-gradient(to bottom, #ffcc7b, #eba235);
 }
